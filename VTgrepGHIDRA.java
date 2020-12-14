@@ -77,6 +77,7 @@ public class VTgrepGHIDRA extends GhidraScript {
 
         if (currentSelection == null) {
             popup("Please make a valid selection in the program and select 'reload'.");
+	    return;
         }
 
         dialog = new YaraDialog();
